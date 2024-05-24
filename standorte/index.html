@@ -288,6 +288,8 @@ var overlays = {
 	 // L.geoJson function is used to parse geojson file and load on to map
 	 L.geoJson(data).addTo(layerBB);
 	 });
+	 
+	 layerBB.bringToBack() ;
 
 	function getColor_circle(d) {
         return d === 'active' ? "white" :
