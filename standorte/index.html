@@ -5,7 +5,7 @@ title: cosmic pages
 <!DOCTYPE html>
 <html>
 <div class="blurb">
-	<h1>JFC Site at Marquardt</h1>
+	<h1>Das CRNS-Netzwerk in Brandenburg</h1>
 </div><!-- /.blurb -->
 
 <head>
@@ -62,8 +62,9 @@ title: cosmic pages
 </head>
 <body>
 
-<h3> Further links </h3>
-Field campaign in Marquardt has been running since in August 2019 in cooperation with <a href="https://www.atb-potsdam.de/institut/ueber-uns/forschungsinfrastruktur/forschungsstandorte/ausstattung-und-standorteigenschaften.html"> ATB Marquardt </a>. It comprises the operation of 12 CRNS, accommpanied with soil moisture profile probes, a GNSS-station and a ground-truth campaign assessing soil moisture, bulk density and organic matter.<br>
+Die Zahl kosmogener Neutronen in der oberflächennahen Atmosphäre steht in direkter Beziehung zur Bodenfeuchte.
+Die Universität Potsdam, das Helmholtz-Zentrum für Umweltforschung und das Land Brandenburg messen an
+aktuell acht Standorten in Brandenburg Bodenfeuchte mittels Zählung kosmogener Neutronen.<br>
 
 <div id='map'></div>
 
@@ -72,8 +73,8 @@ Field campaign in Marquardt has been running since in August 2019 in cooperation
 <script type="text/javascript">
 
 var layerCRNS = new L.LayerGroup(); //layer containing CRNS-stations
-var layerGNSS = new L.LayerGroup(); //layer containing GNSS
-var layerTheta = new L.LayerGroup(); //layer containing ThetaProbes / PR2s
+//var layerGNSS = new L.LayerGroup(); //layer containing GNSS
+//var layerTheta = new L.LayerGroup(); //layer containing ThetaProbes / PR2s
 //var layerTubes = new L.LayerGroup(); //layer containing empty tubes
 
 
@@ -270,7 +271,7 @@ var overlays = {
 
     var gaugesjson;
 
-    $.getJSON("CRNS_Mq.geojson", function(data) {
+    $.getJSON("bbcluster.geojson", function(data) {
 	    gaugesjson = L.geoJSON(data, {
 		pointToLayer: function (feature, latlng) {
 			  label = String(feature.properties.ID)
@@ -289,7 +290,7 @@ var overlays = {
 
 		function circlestyler(feature) {
 			return {
-				radius: 50,
+				radius: 150,
         color: getColor_circle(feature.properties.status),
         weight: 1,
         opacity: 1,
@@ -298,7 +299,7 @@ var overlays = {
 		}
 
     var gaugescircles;
-    $.getJSON("CRNS_Mq.geojson", function(data) {
+    $.getJSON("bbcluster.geojson", function(data) {
 	    gaugescircles = L.geoJSON(data, {
 		pointToLayer: function (feature, latlng) {
 		    return L.circle(latlng, circlestyler(feature));
@@ -308,12 +309,11 @@ var overlays = {
 
 function getColor(d, status) {
         if (status  === "removed") return "grey"
-		return d === 'FZJ' ? "#c0392b" :
-               d === 'GFZ' ? "#9b59b6" :
-               d === 'HZM' ? "#2980b9" :
-               d === 'KIT' ? "#1abc9c" :
-               d === 'UP'  ? "#2F4F4F" :
-               d === 'UFZ' ? "#e67e22" :
+		return   d === 'Acker' ? "#c0392b" :
+               d === 'Grünland' ? "#9b59b6" :
+               d === 'Wald (Kiefer)' ? "#2980b9" :
+               d === 'Urban' ? "#1abc9c" :
+               d === 'Gemischt'  ? "#2F4F4F" :
                             "grey";
     }
 
@@ -331,23 +331,6 @@ function getColor(d, status) {
 
 
 
-//GNSS
-	var gnssStyle = {
-			radius: 5,
-			fillColor: "white",
-			color: false,
-			weight: 1,
-			opacity: 1,
-			fillOpacity: 0.8
-    };
-
- var gnssjson;
-    $.getJSON("gnss.geojson", function(data) {
-        gnssjson = L.geoJSON(data, {
-		 pointToLayer: function (feature, latlng) {
-		        return L.circleMarker(latlng, gnssStyle);
-					}}).addTo(layerGNSS);
-    });
 
 /*
 //PR2 tubes for campaign
@@ -388,7 +371,7 @@ function tubestyler(feature) {
             }).addTo(layerTubes);
 //            }).addTo(map);
     });
-*/
+
 
 //theta stations
 function thetastyler(feature) {
@@ -412,6 +395,7 @@ function thetastyler(feature) {
             }).addTo(layerTheta);
 //            }).addTo(map);
     });
+*/
 
 var legend = L.control({position: 'bottomright'});
     legend.onAdd = function (map) {
@@ -419,6 +403,7 @@ var legend = L.control({position: 'bottomright'});
     var div = L.DomUtil.create('div', 'info legend');
     labels = ['<strong>CRNS Locations</strong>'],
     categories = ['FZJ','GFZ','HZM','KIT','UP','UFZ'];
+	 categories = ['Acker','Grünland','Wald (Kiefer)','Urban','Gemischt'];
 
     for (var i = 0; i < categories.length; i++) {
 
