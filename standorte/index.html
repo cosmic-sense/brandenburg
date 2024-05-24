@@ -1,6 +1,6 @@
 ---
 layout: default
-title: cosmic pages
+title: COSMOS Brandenburg
 ---
 <!DOCTYPE html>
 <html>
@@ -106,8 +106,8 @@ var Esri_WorldImagery =  L.tileLayer('https://server.arcgisonline.com/ArcGIS/res
 
 var overlays = {
 			"CRNS": layerCRNS,
-			"GNSS": layerGNSS,
-			"Theta": layerTheta
+//			"GNSS": layerGNSS,
+//			"Theta": layerTheta
 //			"tubes": layerTubes
 //			"planned_SM": layerplannedSM
 		};
@@ -115,8 +115,8 @@ var overlays = {
 
   var map = L.map('map',
                   {center: [52.4662, 12.961],
-                   zoom: 16,
-                   layers: [Esri_WorldImagery, layerCRNS, layerGNSS],  // layerTubes, layerTheta
+                   zoom: 8,
+                   layers: [Esri_WorldImagery, layerCRNS], //layerGNSS],  // layerTubes, layerTheta
                    worldCopyJump: false,
                    crs: L.CRS.EPSG3857
                   });
@@ -137,11 +137,11 @@ var overlays = {
 
 	info.update = function (props) {
 		this._div.innerHTML = '<h4>Massive Coverage CRNS Network</h4>' +  (props ?
-		'<b> ID:</b> ' + props.ID + '<br>' +
-		'<b> Institution:</b> ' +props.Inst    + '<br>'+
+		'<b> ID:</b> ' + props.id + '<br>' +
+//		'<b> Institution:</b> ' +props.Inst    + '<br>'+
 //		'<b> Logger ID:</b> ' +props.loggerid    + '<br>'+
-		'<b> Type:</b> '        +props.Type  + '<br>' +
-		'<b> Location:</b> '        +props.Name  + '<br>' 
+		'<b> Standort:</b> '        +props.name  + '<br>' +
+		'<b> Landnutzung:</b> '        +props.landuse  + '<br>' 
 //		'<b> Bare counter:</b> '+props.Bare  + '<br>'+
 //		'<b> Modem:</b> '+props.Modem  + '<br>'+
 //		'<b> Planned location:</b> ' + Number((props.xcoord).toFixed(6)) + ', ' + Number((props.ycoord).toFixed(6)) + '<br>' +

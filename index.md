@@ -1,6 +1,6 @@
 ---
 layout: default
-title: cosmic pages 
+title: COSMOS Brandenburg 
 ---
 
 # About
