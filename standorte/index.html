@@ -106,8 +106,8 @@ var Esri_WorldImagery =  L.tileLayer('https://server.arcgisonline.com/ArcGIS/res
 
 
 var overlays = {
-			"CRNS": layerCRNS,
-			"BB": layerBB
+			"BB": layerBB,
+			"CRNS": layerCRNS
 //			"Theta": layerTheta
 //			"tubes": layerTubes
 //			"planned_SM": layerplannedSM
@@ -117,7 +117,7 @@ var overlays = {
   var map = L.map('map',
                   {center: [52.4985955793116, 13.411922199738276],
                    zoom: 8,
-                   layers: [Esri_WorldImagery, layerCRNS, layerBB], //layerGNSS],  // layerTubes, layerTheta
+                   layers: [Esri_WorldImagery, layerBB, layerCRNS], //layerGNSS],  // layerTubes, layerTheta
                    worldCopyJump: false,
                    crs: L.CRS.EPSG3857
                   });
