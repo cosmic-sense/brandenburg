@@ -5,6 +5,6 @@ title: COSMOS Brandenburg
 
 # Bodenfeuchte-Monitoring
 
-![overview](https://github.com/cosmic-sense/brandenburg/blob/main/monitoring/bb-cluster-swc-series.png "Monitor")
+![overview](https://raw.githubusercontent.com/cosmic-sense/brandenburg/main/monitoring/bb-cluster-swc-series.png "Monitor")
 
 
