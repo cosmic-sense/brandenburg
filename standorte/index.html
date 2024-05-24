@@ -32,7 +32,7 @@ title: COSMOS Brandenburg
 	</style>
 
 	<style>
-		#map { width: 100%; height: 900px; }
+		#map { width: 100%; height: 500px; }
 .info { padding: 6px 8px; font: 14px/16px Arial, Helvetica, sans-serif; background: white; background: rgba(255,255,255,0.8); box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px; } .info h4 { margin: 0 0 5px; color: #777; }
 .legend { text-align: left; line-height: 18px; color: #555; } .legend i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.7; }
 .legend .circle {
@@ -114,7 +114,7 @@ var overlays = {
 
 
   var map = L.map('map',
-                  {center: [52.4662, 12.961],
+                  {center: [52.4985955793116, 13.411922199738276],
                    zoom: 8,
                    layers: [Esri_WorldImagery, layerCRNS], //layerGNSS],  // layerTubes, layerTheta
                    worldCopyJump: false,
@@ -136,7 +136,7 @@ var overlays = {
 	};
 
 	info.update = function (props) {
-		this._div.innerHTML = '<h4>Massive Coverage CRNS Network</h4>' +  (props ?
+		this._div.innerHTML = '<h4>CRNS Netzwerk BB</h4>' +  (props ?
 		'<b> ID:</b> ' + props.id + '<br>' +
 //		'<b> Institution:</b> ' +props.Inst    + '<br>'+
 //		'<b> Logger ID:</b> ' +props.loggerid    + '<br>'+
@@ -154,6 +154,7 @@ var overlays = {
 
 	info.addTo(map);
 
+/*
     var myStyle = {
     	"color": "white",
     	"weight": 4,
@@ -172,7 +173,7 @@ var overlays = {
     	"weight": 0,
     	"fill": "red",
     };
-
+*/
 //		var catchjson;
 //    $.getJSON("fendt_catchment.geojson", function(data) {
 //	    json = L.geoJSON(data, {
@@ -221,8 +222,8 @@ var overlays = {
 
 		function pointstyler(feature) {
 			return {
-	        radius: 10,
-	        fillColor: getColor(feature.properties.Inst, feature.properties.status),
+	        radius: 15,
+	        fillColor: getColor(feature.properties.landuse, feature.properties.status),
 	        color: false,
 	        weight: 1,
 	        opacity: 1,
@@ -250,10 +251,10 @@ var overlays = {
     function onEachGauge(feature, layer) {
         //layer.bindPopup('<p>Hello world!<br />This is a nice popup.</p>');
         layer.bindPopup("<iframe srcdoc='<p>"+
-           "ID: "          +feature.properties.ID    + "<br>"+
-					 "Institution: " +feature.properties.Inst    + "<br>" +
-					 "Type: "        +feature.properties.Type    + "<br>" +
-					 "Location:"     +feature.properties.Name    + "<br>" +
+           "ID: "          +feature.properties.id    + "<br>"+
+//					 "Institution: " +feature.properties.Inst    + "<br>" +
+//					 "Type: "        +feature.properties.Type    + "<br>" +
+					 "Standort:"     +feature.properties.name    + "<br>" +
 					 "Status:"     +feature.properties.status    + "<br>" +
 //					 "Bare counter: "+feature.properties.Bare  + "<br>"+
 //					 "Modem: "+feature.properties.Modem  + "<br>"+
@@ -274,7 +275,7 @@ var overlays = {
     $.getJSON("bbcluster.geojson", function(data) {
 	    gaugesjson = L.geoJSON(data, {
 		pointToLayer: function (feature, latlng) {
-			  label = String(feature.properties.ID)
+			  label = String(feature.properties.id)
 		    return L.circleMarker(latlng, pointstyler(feature)).bindTooltip(label, {permanent: true, direction: "center", className: "my-labels"}).openTooltip();
 		},
 		onEachFeature: onEachGauge
@@ -291,7 +292,7 @@ var overlays = {
 		function circlestyler(feature) {
 			return {
 				radius: 150,
-        color: getColor_circle(feature.properties.status),
+        color: "white",//getColor_circle(feature.properties.status),
         weight: 1,
         opacity: 1,
         fill: false
@@ -317,17 +318,17 @@ function getColor(d, status) {
                             "grey";
     }
 
-    function style(feature) {
-        return {
-            weight: 1.5,
-            opacity: 1,
-            fillOpacity: 1,
-            radius: 6,
-            fillColor: getColor(feature.properties.TypeOfIssue),
-            color: "grey"
+function style(feature) {
+  return {
+      weight: 1.5,
+      opacity: 1,
+      fillOpacity: 1,
+      radius: 6,
+      fillColor: getColor(feature.properties.TypeOfIssue),
+      color: "grey"
 
-        };
-    }
+  };
+}
 
 
 
