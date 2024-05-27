@@ -105,19 +105,19 @@ var Esri_WorldImagery =  L.tileLayer('https://server.arcgisonline.com/ArcGIS/res
 
 
 
-var overlays = {
-			"BB": layerBB,
-			"CRNS": layerCRNS
+//var overlays = {
+//			"BB": layerBB,
+//			"CRNS": layerCRNS
 //			"Theta": layerTheta
 //			"tubes": layerTubes
 //			"planned_SM": layerplannedSM
-		};
+//		};
 
 
   var map = L.map('map',
                   {center: [52.49859, 13.411922],
                    zoom: 8,
-                   layers: [Esri_WorldImagery, layerBB, layerCRNS], //layerGNSS],  // layerTubes, layerTheta
+                   layers: [Esri_WorldImagery, layerCRNS, layerBB], //layerGNSS],  // layerTubes, layerTheta
                    worldCopyJump: false,
                    crs: L.CRS.EPSG3857
                   });
@@ -271,6 +271,15 @@ var overlays = {
         });
     }
 
+	 
+	 $.getJSON("bb.geojson",function(data){
+	 // L.geoJson function is used to parse geojson file and load on to map
+	 L.geoJson(data).addTo(layerBB);
+	 });
+	 
+	 layerBB.bringToBack() ;
+
+
     var gaugesjson;
 
     $.getJSON("bbcluster.geojson", function(data) {
@@ -283,13 +292,6 @@ var overlays = {
             }).addTo(layerCRNS);
     });
 	 
-
-	 $.getJSON("bb.geojson",function(data){
-	 // L.geoJson function is used to parse geojson file and load on to map
-	 L.geoJson(data).addTo(layerBB);
-	 });
-	 
-	 layerBB.bringToBack() ;
 
 	function getColor_circle(d) {
         return d === 'active' ? "white" :
