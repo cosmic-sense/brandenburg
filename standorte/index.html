@@ -73,7 +73,7 @@ aktuell acht Standorten in Brandenburg Bodenfeuchte mittels Zählung kosmogener 
 <script type="text/javascript">
 
 var layerCRNS = new L.LayerGroup(); //layer containing CRNS-stations
-var layerBB = new L.LayerGroup(); //layer containing GNSS
+//var layerBB = new L.LayerGroup(); //layer containing GNSS
 //var layerGNSS = new L.LayerGroup(); //layer containing GNSS
 //var layerTheta = new L.LayerGroup(); //layer containing ThetaProbes / PR2s
 //var layerTubes = new L.LayerGroup(); //layer containing empty tubes
@@ -117,7 +117,7 @@ var Esri_WorldImagery =  L.tileLayer('https://server.arcgisonline.com/ArcGIS/res
   var map = L.map('map',
                   {center: [52.49859, 13.411922],
                    zoom: 8,
-                   layers: [Esri_WorldImagery, layerBB, layerCRNS], //layerGNSS],  // layerTubes, layerTheta
+                   layers: [Esri_WorldImagery, layerCRNS], //layerGNSS],  // layerTubes, layerTheta
                    worldCopyJump: false,
                    crs: L.CRS.EPSG3857
                   });
@@ -271,18 +271,22 @@ var Esri_WorldImagery =  L.tileLayer('https://server.arcgisonline.com/ArcGIS/res
         });
     }
 
+	 map.createPane('myPane1');
+	 map.getPane('myPane1').style.zIndex = 200;
 	 
-	 $.getJSON("bb.geojson",function(data){
+	 
+	 $.getJSON("https://raw.githubusercontent.com/cosmic-sense/brandenburg/main/standorte/bb.geojson",function(data){
 	 // L.geoJson function is used to parse geojson file and load on to map
-	 L.geoJson(data).addTo(layerBB);
+	 L.geoJson(data, {pane: 'myPane1'}).addTo(map);
+	 //L.geoJson(data).addTo(layerBB);
 	 });
 	 
-//	 layerBB.bringToBack() ;
+
 
 
     var gaugesjson;
 
-    $.getJSON("bbcluster.geojson", function(data) {
+    $.getJSON("https://raw.githubusercontent.com/cosmic-sense/brandenburg/main/standorte/bbcluster.geojson", function(data) {
 	    gaugesjson = L.geoJSON(data, {
 		pointToLayer: function (feature, latlng) {
 			  label = String(feature.properties.id)
