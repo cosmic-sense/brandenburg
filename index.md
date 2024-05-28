@@ -1,6 +1,6 @@
 ---
 layout: default
-title: COSMOS Brandenburg 
+title: COSMOS-BB 
 ---
 
 # About
