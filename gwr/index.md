@@ -18,6 +18,6 @@ welcher an grundwassernahen Standorten die Wasserverfügbarkeit für die Transpi
 erfolgt noch mit default-Parametern. Die Seite dient bislang nur der Plausibilisierung und Validierung der Datenverarbeitung.
 
 
-![overview](https://raw.githubusercontent.com/cosmic-sense/brandenburg/main/monitoring/bb-cluster-balance.png "Wasserbilanz")
+![overview](https://raw.githubusercontent.com/cosmic-sense/brandenburg/main/gwr/bb-cluster-balance.png "Wasserbilanz")
 
 
