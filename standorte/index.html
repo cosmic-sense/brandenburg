@@ -142,7 +142,14 @@ var Esri_WorldImagery =  L.tileLayer('https://server.arcgisonline.com/ArcGIS/res
 //		'<b> Institution:</b> ' +props.Inst    + '<br>'+
 //		'<b> Logger ID:</b> ' +props.loggerid    + '<br>'+
 		'<b> Standort:</b> '        +props.name  + '<br>' +
-		'<b> Landnutzung:</b> '        +props.landuse  + '<br>' 
+		'<b> Landnutzung:</b> '        +props.landuse  + '<br>' +
+		'<b> Bodenart:</b> '        +props.ka5_bez  + '<br>' +
+		'<b> kF (bis 1m):</b> '        +props.m1_wert  + '<br>' +
+		'<b> kF (bis 2m):</b> '        +props.m2_wert  + '<br>' +
+		'<b> FK (bis 1m):</b> '        +props.fk_1m_wert  + '<br>' +
+		'<b> nFK (bis 1m):</b> '        +props.nfk_1m_wert  + '<br>' + 
+		'<b> Humusgehalt:</b> '        +props.wertebereich  + '<br>' + 
+		'(Bodenattribute gem. BUEK300)'  + '<br>' 
 //		'<b> Bare counter:</b> '+props.Bare  + '<br>'+
 //		'<b> Modem:</b> '+props.Modem  + '<br>'+
 //		'<b> Planned location:</b> ' + Number((props.xcoord).toFixed(6)) + ', ' + Number((props.ycoord).toFixed(6)) + '<br>' +
