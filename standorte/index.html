@@ -141,6 +141,7 @@ var Esri_WorldImagery =  L.tileLayer('https://server.arcgisonline.com/ArcGIS/res
 		'<b> ID:</b> ' + props.id + '<br>' +
 		'<b> Standort:</b> '        +props.name  + '<br>' +
 		'<b> Landnutzung:</b> '        +props.landuse  + '<br>' +
+		'<b> GW-Flurabstand:</b> '        +props.WERT + 'm' + '<br>' +
 		'<b> Bodenart:</b> '        +props.ka5_bez  + '<br>' +
 /*		'<b> kF (bis 1m):</b> '        +props.m1_wert  + '<br>' +
 		'<b> kF (bis 2m):</b> '        +props.m2_wert  + '<br>' +
@@ -254,6 +255,7 @@ var Esri_WorldImagery =  L.tileLayer('https://server.arcgisonline.com/ArcGIS/res
 					'<b> ID:</b> '        +feature.properties.id  + '<br>' +
 					'<b> Standort:</b> '        +feature.properties.name  + '<br>' +
 			 		'<b> Landnutzung:</b> '        +feature.properties.landuse  + '<br>' +
+			 		'<b> GW-Flurabstand:</b> '        +feature.properties.WERT  + 'm' + '<br>' +
 			 		'<b> Bodenart:</b> '        +feature.properties.ka5_bez  + '<br>' +
 			 		'<b> kF (bis 1m):</b> '        +feature.properties.m1_wert  + '<br>' +
 			 		'<b> kF (bis 2m):</b> '        +feature.properties.m2_wert  + '<br>' +
