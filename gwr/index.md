@@ -18,6 +18,7 @@ sowie dem Grundwasserflurabstand, welcher an grundwassernahen Standorten maßgeb
 **Disclaimer**: Die dargestellten Werte sind vorläufig. Sowohl die CRNS-basierte Schätzung der Bodenfeuchte als auch die SWAP-Modellierung 
 erfolgt noch mit default-Parametern. Die Seite dient bislang lediglich der Plausibilisierung und Validierung der Datenverarbeitung.
 
+**Aktualisierung ausgesetzt**: Aktuell gibt es für mehrere Sonden eine Störung der Datenfernübertragung (u.a. nach einer DoS-Attacke auf die Uni Potsdam) sowie der Integrität des Messsignals (Standorte Booßen und Golm). **Wir versuchen diese Störungen möglichst bald zu beheben. Bis dahin setzen wir die Aktualisierung dieser Seite aus.**
 
 ![overview](https://raw.githubusercontent.com/cosmic-sense/brandenburg/main/gwr/bb-cluster-balance.png "Wasserbilanz")
 
