@@ -15,6 +15,10 @@ Wir setzen die Aktualisierung des Monitors für einige Zeit aus, um die beschrie
 
 ### 2024-12-12
 
+Abschlussworkshop des Projekts "Einfluss des Klimawandels auf die Grundwasserneubildung in Brandenburg: Anpassungsbedarfe und Hebelpunkte" in Potsdam, gemeinsam mit Vertreter:innen des MLUK, LfU und LBGR. Wir danken dem Land Brandenburg für die Förderung des Projekts, welches die Entwicklung des Monitoringnetzwerks maßgeblich mitunterstützt hat.
+
+### 2024-12-12
+
 Preprint über das CRNS-Netzwerk in Brandenburg in EGUsphere veröffentlicht ([Link](https://egusphere.copernicus.org/preprints/2024/egusphere-2024-3848/)).
 
 ### 2024-11-15
