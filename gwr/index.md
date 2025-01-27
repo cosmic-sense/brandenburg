@@ -5,9 +5,7 @@ title: COSMOS Brandenburg
 
 # Lokale Wasserbilanz
 
-Die folgende Abbildung zeigt die Wasserbilanz an den Monitoringstandorten für das laufende Jahr. Die Bilanz wird mit Hilfe des Bodenwasserhaushaltsmodells
-[SWAP](https://www.swap.alterra.nl/) berechnet. Dargestellt ist der Bodenwasserspeicher bis in einen Meter Tiefe sowie die kumulativen Bilanzglieder 
-Niederschlag, Evapotranspiration und Sickerwasserfluss in zwei Metern Tiefe. Letzteres kann als Proxy für die Grundwasserneubildung betrachtet werden. 
+Die folgende Abbildung zeigt die Wasserbilanz an den Monitoringstandorten für das laufende Jahr. Die Bilanz wird mit Hilfe des Bodenwasserhaushaltsmodells [SWAP](https://www.swap.alterra.nl/) berechnet. Dargestellt ist der **Bodenwasserspeicher bis in einen Meter Tiefe** sowie **die kumulativen Bilanzglieder Niederschlag, Evapotranspiration und Sickerwasserfluss in zwei Metern Tiefe**. Letzteres kann als Proxy für die Grundwasserneubildung betrachtet werden. **Die kumulativen Flüsse werden jeweils von Beginn bis zum Ende eines Kalenderjahres angezeigt.**
 Negative Werte des Sickerwasserflusses zeigen einen Nettofluss in Richtung Grundwasser an. An grundwassernahen Standorten kann der kumulative 
 Sickerwasserfluss positiv werden (Grundwasserzehrung). 
 
