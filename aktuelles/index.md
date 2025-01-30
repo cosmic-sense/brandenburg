@@ -5,6 +5,10 @@ title: COSMOS-BB
 
 # Aktuelles
 
+### 2025-01-30
+
+Die Datenlücke für den Standort Oehna (im Wstl. Dezember 2024) ist nun geschlossen.
+
 ### 2025-01-27
 
 Die Monitorseite wird nun wieder routinemäßig aktualisiert. Wir arbeiten weiter an der Schließung der entstandenen Datenlücke für den Standort Oehna. Zu diesem Zweck müssen zunächst die Daten von der SD-Karte der Sonde lokal ausgelesen werden.
