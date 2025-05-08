@@ -5,6 +5,10 @@ title: COSMOS-BB
 
 # Aktuelles
 
+### 2025-05-02
+
+Aufgrund einer defekten Komponente hat die Station Kienhorst vom 17.3-1.5.2025 nicht aufgezeichnet. Das Problem ist nun behoben. 
+
 ### 2025-01-30
 
 Die Datenlücke für den Standort Oehna (im Wstl. Dezember 2024) ist nun geschlossen.
