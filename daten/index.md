@@ -5,7 +5,7 @@ title: COSMOS-BB
 
 # Datendownload
 
-Die Messdaten der CRNS-Stationen sowie die daraus abgeleiteten Bodenfeuchteprodukte stehen [hier](https://b2drop.eudat.eu/s/P73pX3Me36FpdxP) zum Download zur Verfügung. 
+Die Messdaten der CRNS-Stationen sowie die daraus abgeleiteten Bodenfeuchteprodukte stehen [hier](https://b2drop.eudat.eu/s/efStHSPAM8HLc92) zum Download zur Verfügung. 
 
 # Lizenz und Attribution
 
