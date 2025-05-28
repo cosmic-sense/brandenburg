@@ -59,5 +59,5 @@ Monitoring-Netzwerk offiziell beim Besuch des Brandenburgischen Umweltministers 
 
 ### 2024-05-01
 
-Mittlerweile sind sieben CRNS-gestützte Bodenfeuchtesensoren im Rahmen unseres Monitoringnetzwerks in Brandenburg online (Standorte Booßen, Quillow/Dedelow, Paulinenaue, Kienhorst, Marquardt Ost, Oehna). Ferner können wir die Daten der Standorte Lindenberg (UFZ/DWD) und Marqaurdt (ATB, Uni Potsdam) nutzen und darstellen.
+Mittlerweile sind sieben CRNS-gestützte Bodenfeuchtesensoren im Rahmen unseres Monitoringnetzwerks in Brandenburg online (Standorte Booßen, Dedelow, Paulinenaue, Kienhorst, Marquardt Ost, Oehna). Ferner können wir die Daten der Standorte Lindenberg (UFZ/DWD) und Marquardt (ATB, Uni Potsdam) nutzen und darstellen.
 
