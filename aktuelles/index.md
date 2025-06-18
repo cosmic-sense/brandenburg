@@ -5,6 +5,10 @@ title: COSMOS-BB
 
 # Aktuelles
 
+### 2025-06-13
+
+Die Sonden an den Standorten Kienhorst (KH), Paulinenaue (PAU), Booßen (BOO) und Dedelow/Quillow (DED) und Potsdam/Golm (GOL) übertragen seit dem 12. Juni 2025 keine Daten. Wir arbeiten an einer Behebung des Problems. 
+
 ### 2025-05-02
 
 Aufgrund einer defekten Komponente hat die Station Kienhorst vom 17.3-1.5.2025 nicht aufgezeichnet. Das Problem ist nun behoben. 
