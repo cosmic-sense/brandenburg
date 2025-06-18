@@ -7,7 +7,7 @@ title: COSMOS-BB
 
 ### 2025-06-13
 
-Die Sonden an den Standorten Kienhorst (KH), Paulinenaue (PAU), Booßen (BOO) und Dedelow/Quillow (DED) und Potsdam/Golm (GOL) übertragen seit dem 12. Juni 2025 keine Daten. Wir arbeiten an einer Behebung des Problems. 
+Die Sonden an den Standorten Kienhorst (KH), Paulinenaue (PAU), Booßen (BOO), Dedelow/Quillow (DED) und Potsdam/Golm (GOL) übertragen seit dem 12. Juni 2025 keine Daten. Wir arbeiten an einer Behebung des Problems. 
 
 ### 2025-05-02
 
