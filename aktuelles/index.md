@@ -5,6 +5,10 @@ title: COSMOS-BB
 
 # Aktuelles
 
+### 2025-07-17
+
+Die Datenübertragung an den Standorten Kienhorst (KH), Paulinenaue (PAU), Booßen (BOO), Dedelow/Quillow (DED) und Potsdam/Golm (GOL) ist seit dem 16. Juli 2025 wieder hergestellt. Für Kienhorst (KH), Booßen (BOO) und Potsdam/Golm (GOL) sind die durch den DFÜ-Ausfall entstandenen Datenlücken bereits geschlossen. Für Paulinenaue (PAU) und Dedelow/Quillow (DED) erfolgt die Schließung der Datenlücken in den kommenden Wochen. Eine entsprechende Statusmeldung wird dann erfolgen.
+
 ### 2025-06-26
 
 Die Ursache für den Ausfall der DFÜ für die Sonden KH, PAU, BOO, DED und GOL ist identifiziert. Die Behebung erfordert jeweils einen Eingriff vor Ort. Am Standort Potsdam/Golm (GOL) konnte das Problem bereits behoben werden. An den übrigen Standorten wird dies voraussichtlich bis Juli 2025 erfolgen. Die entstandenen Datenlücken werden wir versuchen schrittweise zu füllen.
