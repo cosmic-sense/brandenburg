@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/brandenburg/assets/css/style.css?v=">
+    <link rel="stylesheet" type="text/css" href="/brandenburg/assets/css/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>COSMOS-BB</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="COSMOS-BB" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://cosmic-sense.github.io/brandenburg/brandenburg/standorte/" />
+<meta property="og:url" content="https://cosmic-sense.github.io/brandenburg/brandenburg/standorte/" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="COSMOS-BB" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"COSMOS-BB","url":"https://cosmic-sense.github.io/brandenburg/brandenburg/standorte/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+
+<!--          <h1><img src="https://raw.githubusercontent.com/cosmic-sense/brandenburg/main/_layouts/thelogo.png" alt="CosmicSense Logo"  width="322" height="130"> COSMOS-BB</h1>
+-->
+<h1><img src="https://raw.githubusercontent.com/cosmic-sense/brandenburg/main/_layouts/thelogo.png" alt="CosmicSense Logo"  width="500" height="130"> </h1>
+          <h2></h2>
+	  <p style="text-align: left;">
+  <a href="/brandenburg/">About</a> |
+  <a href="/brandenburg/standorte/">Standorte</a> |
+  <a href="/brandenburg/monitoring/">Monitoring</a> |
+  <a href="/brandenburg/gwr/">Lokale Wasserbilanz</a> |
+  <a href="/brandenburg/daten/">Daten</a> |
+  <a href="/brandenburg/aktuelles/">Aktuelles</a> |
+</p>
+
+     
+     <div class="wrapper">
+       
+       <!-- jekyll-polyglot will process ferh= into href= through the static_href liquid block tag without relativizing the url; useful for making language navigation switchers  -->
+       
+         
+         <a style="font-weight: bold;" href="/brandenburg/standorte/" >en</a>
+         
+       
+         |
+         <a  href="/brandenburg/de/standorte/" >de</a>
+         
+       
+     </div>
+     
+        </header>
+        <section id="downloads" class="clearfix">
+          
+	
+        </section>
+        <hr>
+        <section id="main_content">
+          <!DOCTYPE html>
+<html>
+<div class="blurb">
+	<h1>Das CRNS-Netzwerk in Brandenburg</h1>
+</div><!-- /.blurb -->
+
+<head>
+
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="shortcut icon" type="image/x-icon" href="../_layouts/favicon.ico" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+
+
+	<style>
+		html, body {
+			height: 100%;
+			margin: 0;
+		}
+		#map {
+			width: 100%;
+			height: 700px;
+		}
+	</style>
+
+	<style>
+		#map { width: 100%; height: 600px; }
+.info { padding: 6px 8px; font: 14px/16px Arial, Helvetica, sans-serif; background: white; background: rgba(255,255,255,0.8); box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px; } .info h4 { margin: 0 0 5px; color: #777; }
+.legend { text-align: left; line-height: 18px; color: #555; } .legend i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.7; }
+.legend .circle {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin-top: 5px;
+}
+.legend .smallcircle {
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  margin-top: 5px;
+	margin-left: 2px;
+}
+
+/* remove label background elements */
+.leaflet-tooltip.my-labels {
+  background-color: transparent;
+  border: transparent;
+  box-shadow: none;
+  font-weight: bold;
+  font-size: 15px;
+	color: white;
+  }
+	</style>
+</head>
+<body>
+
+Die Menge kosmogener Neutronen in der oberflächennahen Atmosphäre steht in direkter Beziehung zur Bodenfeuchte.
+Die Universität Potsdam, das Helmholtz-Zentrum für Umweltforschung und das Land Brandenburg messen an
+aktuell neun Standorten in Brandenburg Bodenfeuchte mittels Zählung kosmogener Neutronen.<br>
+
+<div id='map'></div>
+
+<script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+
+<script type="text/javascript">
+
+var layerCRNS = new L.LayerGroup(); //layer containing CRNS-stations
+//var layerBB = new L.LayerGroup(); //layer containing GNSS
+//var layerGNSS = new L.LayerGroup(); //layer containing GNSS
+//var layerTheta = new L.LayerGroup(); //layer containing ThetaProbes / PR2s
+//var layerTubes = new L.LayerGroup(); //layer containing empty tubes
+
+
+var OpenStreetMap_DE = L.tileLayer('http://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
+			attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
+		});
+
+var osm = L.tileLayer('http://{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png', {
+	attribution: '&copy; <a href="http://www.opencyclemap.org">OpenCycleMap</a>, &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
+});
+
+var Esri_WorldImagery =  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+    {
+      "attribution": 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
+      "detectRetina": false,
+      "maxZoom": 19,
+      "minZoom": 1,
+      "noWrap": false,
+      "subdomains": "abc"
+    });
+
+	var baseLayers = {
+       		"OpenStreetMap_DE": OpenStreetMap_DE,
+			"OSM/Mapnik": osm, /**/
+			"ESRI-Luftbild": Esri_WorldImagery
+		};
+
+
+
+//var overlays = {
+//			"BB": layerBB,
+//			"CRNS": layerCRNS
+//			"Theta": layerTheta
+//			"tubes": layerTubes
+//			"planned_SM": layerplannedSM
+//		};
+
+
+  var map = L.map('map',
+                  {center: [52.49859, 13.411922],
+                   zoom: 8,
+                   layers: [Esri_WorldImagery, layerCRNS], //layerGNSS],  // layerTubes, layerTheta
+                   worldCopyJump: false,
+                   crs: L.CRS.EPSG3857
+                  });
+
+
+//	L.control.layers(baseLayers,overlays).addTo(map);
+
+
+
+	// control that shows state info on hover
+	var info = L.control();
+
+	info.onAdd = function (map) {
+		this._div = L.DomUtil.create('div', 'info');
+		this.update();
+		return this._div;
+	};
+
+	info.update = function (props) {
+		this._div.innerHTML = '<h4>CRNS Netzwerk BB</h4>' +  (props ?
+		'<b> ID:</b> ' + props.id + '<br>' +
+		'<b> Standort:</b> '        +props.name  + '<br>' +
+		'<b> Landnutzung:</b> '        +props.landuse  + '<br>' +
+		'<b> GW-Flurabstand:</b> '        +props.WERT + 'm' + '<br>' +
+		'<b> Bodenart:</b> '        +props.ka5_bez  + '<br>' +
+/*		'<b> kF (bis 1m):</b> '        +props.m1_wert  + '<br>' +
+		'<b> kF (bis 2m):</b> '        +props.m2_wert  + '<br>' +
+		'<b> FK (bis 1m):</b> '        +props.fk_1m_wert  + '<br>' +
+		'<b> nFK (bis 1m):</b> '        +props.nfk_1m_wert  + '<br>' + 
+		'<b> Humusgehalt:</b> '        +props.wertebereich  + '<br>' + */
+		'(für weitere Attribute klicken)'  + '<br>' 
+
+			: 'Hover over a sensor');
+	};
+
+	info.addTo(map);
+
+/*
+    var myStyle = {
+    	"color": "white",
+    	"weight": 4,
+    	"opacity": 0.65
+    };
+
+		var ownersStyle = {
+    	"color": "red",
+    	"weight": 0.5,
+    	"fill": false,
+			"opacity": 0.65
+    };
+
+		var nogoStyle = {
+    	"color": "red",
+    	"weight": 0,
+    	"fill": "red",
+    };
+*/
+//		var catchjson;
+//    $.getJSON("fendt_catchment.geojson", function(data) {
+//	    json = L.geoJSON(data, {
+//		style: myStyle
+//		}).addTo(map);
+//    });
+
+
+//		var owners1json;
+//    $.getJSON("owners1.geojson", function(data) {
+//	    json = L.geoJSON(data, {
+//		style: ownersStyle
+//		}).addTo(map);
+//    });
+
+//		var owners2json;
+//    $.getJSON("owners2.geojson", function(data) {
+//	    json = L.geoJSON(data, {
+//		style: ownersStyle
+//		}).addTo(map);
+//    });
+
+//		var nogo2json;
+//    $.getJSON("nogo.geojson", function(data) {
+//	    json = L.geoJSON(data, {
+//		style: nogoStyle
+//		}).addTo(map);
+//    });
+
+//		var soilnetStyle = {
+//			radius: 3,
+//			fillColor: "black",
+//			color: false,
+//			weight: 1,
+//			opacity: 1,
+//			fillOpacity: 0.8
+//    };
+
+//    var soilnetjson;
+//		$.getJSON("soilnet.geojson", function(data) {
+//	    soilnetjson = L.geoJSON(data, {
+//         pointToLayer: function (feature, latlng) {
+//		        return L.circleMarker(latlng, soilnetStyle);
+//					}}).addTo(map);
+//			    });
+
+		function pointstyler(feature) {
+			return {
+	        radius: 17,
+	        fillColor: getColor(feature.properties.landuse, feature.properties.status),
+	        color: false,
+	        weight: 1,
+	        opacity: 1,
+	        fillOpacity: 1
+	    };
+		}
+
+
+
+    function highlightGauge(e) {
+  		var layer = e.target;
+
+  		layer.setStyle({
+          weight: 4
+  		});
+	    info.update(layer.feature.properties);
+  	}
+
+    function resetHighlightGauge(e) {
+      var layer = e.target;
+      gaugesjson.resetStyle(e.target);
+      info.update();
+      }
+
+    function onEachGauge(feature, layer) {
+        //layer.bindPopup('<p>Hello world!<br />This is a nice popup.</p>');
+        layer.bindPopup("<iframe srcdoc='<p>"+
+					'<b> ID:</b> '        +feature.properties.id  + '<br>' +
+					'<b> Standort:</b> '        +feature.properties.name  + '<br>' +
+			 		'<b> Landnutzung:</b> '        +feature.properties.landuse  + '<br>' +
+			 		'<b> GW-Flurabstand:</b> '        +feature.properties.WERT  + 'm' + '<br>' +
+			 		'<b> Bodenart:</b> '        +feature.properties.ka5_bez  + '<br>' +
+			 		'<b> kF (bis 1m):</b> '        +feature.properties.m1_wert  + '<br>' +
+			 		'<b> kF (bis 2m):</b> '        +feature.properties.m2_wert  + '<br>' +
+			 		'<b> FK (bis 1m):</b> '        +feature.properties.fk_1m_wert  + '<br>' +
+			 		'<b> nFK (bis 1m):</b> '        +feature.properties.nfk_1m_wert  + '<br>' + 
+			 		'<b> Humusgehalt:</b> '        +feature.properties.wertebereich  + '<br>' + 
+			 		'(Bodenattribute gem. BUEK300)'  + '<br>' +
+					 "</p>' height='200px' width='300px'</iframe>")
+
+        layer.on({
+            mouseover: highlightGauge,
+            mouseout: resetHighlightGauge
+        });
+    }
+	 // https://gis.stackexchange.com/questions/137061/changing-layer-order-in-leaflet
+	 map.createPane('myPane1');
+	 map.getPane('myPane1').style.zIndex = 200;
+	 
+	 
+	 $.getJSON("https://raw.githubusercontent.com/cosmic-sense/brandenburg/main/standorte/bb.geojson",function(data){
+	 // L.geoJson function is used to parse geojson file and load on to map
+	 L.geoJson(data, {pane: 'myPane1'}).addTo(map);
+	 //L.geoJson(data).addTo(layerBB);
+	 });
+	 
+
+
+
+    var gaugesjson;
+
+    $.getJSON("https://raw.githubusercontent.com/cosmic-sense/brandenburg/main/standorte/bbcluster.geojson", function(data) {
+	    gaugesjson = L.geoJSON(data, {
+		pointToLayer: function (feature, latlng) {
+			  label = String(feature.properties.id)
+		    return L.circleMarker(latlng, pointstyler(feature)).bindTooltip(label, {permanent: true, direction: "center", className: "my-labels"}).openTooltip();
+		},
+		onEachFeature: onEachGauge
+            }).addTo(layerCRNS);
+    });
+	 
+
+	function getColor_circle(d) {
+        return d === 'active' ? "white" :
+            //   d === 'Harz' ? "red" :
+               d === 'removed' ? "" :
+                            "grey";
+    }
+
+		function circlestyler(feature) {
+			return {
+				radius: 150,
+        color: "white",//getColor_circle(feature.properties.status),
+        weight: 1,
+        opacity: 1,
+        fill: false
+	    };
+		}
+
+    var gaugescircles;
+    $.getJSON("bbcluster.geojson", function(data) {
+	    gaugescircles = L.geoJSON(data, {
+		pointToLayer: function (feature, latlng) {
+		    return L.circle(latlng, circlestyler(feature));
+		},
+            }).addTo(layerCRNS);
+    });
+
+function getColor(d, status) {
+        if (status  === "removed") return "grey"
+		return   d === 'Acker' ? "#c0392b" :
+               d === 'Grünland' ? "#9b59b6" :
+               d === 'Wald (Kiefer)' ? "#2980b9" :
+               d === 'Urban' ? "#1abc9c" :
+               d === 'Gemischt'  ? "#2F4F4F" :
+                            "grey";
+    }
+
+function style(feature) {
+  return {
+      weight: 1.5,
+      opacity: 1,
+      fillOpacity: 1,
+      radius: 6,
+      fillColor: getColor(feature.properties.TypeOfIssue),
+      color: "grey"
+
+  };
+}
+
+
+
+
+/*
+//PR2 tubes for campaign
+	var tubestyle2 = {
+			radius: 5,
+			fillColor: "cyan",
+			color: false,
+			weight: 1,
+			opacity: 1,
+			fillOpacity: 0.8
+    };
+ var tubejson2;
+    $.getJSON("profilsondenrohre.geojson", function(data) {
+	    tubejson2 = L.geoJSON(data, {
+		 pointToLayer: function (feature, latlng) {
+		        return L.circleMarker(latlng, tubestyle2);
+					}}).addTo(layerTubes);
+    });
+
+function tubestyler(feature) {
+			return {
+	        radius: 5,
+	        fillColor: "cyan",
+	        color: false,
+	        weight: 1,
+	        opacity: 1,
+	        fillOpacity: 0.8
+	    };
+		}
+
+ var tubejson;
+    $.getJSON("profilsondenrohre.geojson", function(data) {
+	    tubejson = L.geoJSON(data, {
+		pointToLayer: function (feature, latlng) {
+			  label = String(feature.properties.Name)
+		    return L.circleMarker(latlng, tubestyler(feature)).bindTooltip(label, {permanent: true, direction: "center", className: "my-labels"}).openTooltip();
+		},
+            }).addTo(layerTubes);
+//            }).addTo(map);
+    });
+
+
+//theta stations
+function thetastyler(feature) {
+			return {
+	        radius: 5,
+	        fillColor: "blue",
+	        color: false,
+	        weight: 1,
+	        opacity: 1,
+	        fillOpacity: 0.8
+	    };
+		}
+
+ var thetajson;
+    $.getJSON("theta_stations2.geojson", function(data) {
+	    thetajson = L.geoJSON(data, {
+		pointToLayer: function (feature, latlng) {
+			  label = String(feature.properties.name)
+		    return L.circleMarker(latlng, thetastyler(feature)).bindTooltip(label, {permanent: true, direction: "center", className: "my-labels"}).openTooltip();
+		},
+            }).addTo(layerTheta);
+//            }).addTo(map);
+    });
+*/
+
+var legend = L.control({position: 'bottomright'});
+    legend.onAdd = function (map) {
+
+    var div = L.DomUtil.create('div', 'info legend');
+    labels = ['<strong>CRNS Locations</strong>'],
+    categories = ['FZJ','GFZ','HZM','KIT','UP','UFZ'];
+	 categories = ['Acker','Grünland','Wald (Kiefer)','Urban','Gemischt'];
+
+    for (var i = 0; i < categories.length; i++) {
+
+            div.innerHTML +=
+            labels.push(
+                '<i class="circle" style="background:' + getColor(categories[i], "active") + '"></i> ' +
+            (categories[i] ? categories[i] : '+'));
+//	    div.innerHTML +=
+//		'<i class="circle" style="background:' + getColor(categories[i]) + '"></i> ' +
+//		 (categories[i] ? categories[i] + '<br>' : '+');
+
+        }
+//				labels.push(
+//						'<i class="smallcircle" style="background:white" ></i> GNSS');
+        div.innerHTML = labels.join('<br>');
+    return div;
+    };
+    legend.addTo(map);
+
+</script>
+
+
+
+</body>
+</html>
+
+        </section>
+
+        <footer>
+        
+          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+        </footer>
+
+      </div>
+    </div>
+
+    
+  </body>
+</html>
