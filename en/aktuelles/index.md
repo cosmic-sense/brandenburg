@@ -8,69 +8,68 @@ lang: en
 
 ### 2025-07-17
 
-Die Datenübertragung an den Standorten Kienhorst (KH), Paulinenaue (PAU), Booßen (BOO), Dedelow/Quillow (DED) und Potsdam/Golm (GOL) ist seit dem 16. Juli 2025 wieder hergestellt. Für Kienhorst (KH), Booßen (BOO) und Potsdam/Golm (GOL) sind die durch den DFÜ-Ausfall entstandenen Datenlücken bereits geschlossen. Für Paulinenaue (PAU) und Dedelow/Quillow (DED) erfolgt die Schließung der Datenlücken in den kommenden Wochen. Eine entsprechende Statusmeldung wird dann erfolgen.
+Data transmission at the sites Kienhorst (KH), Paulinenaue (PAU), Booßen (BOO), Dedelow/Quillow (DED), and Potsdam/Golm (GOL) has been restored since July 16, 2025. For Kienhorst (KH), Booßen (BOO), and Potsdam/Golm (GOL), the data gaps caused by the remote data transmission failure have already been closed. For Paulinenaue (PAU) and Dedelow/Quillow (DED), the closing of the data gaps will take place in the coming weeks. A corresponding status update will then be provided.
 
 ### 2025-06-26
 
-Die Ursache für den Ausfall der DFÜ für die Sonden KH, PAU, BOO, DED und GOL ist identifiziert. Die Behebung erfordert jeweils einen Eingriff vor Ort. Am Standort Potsdam/Golm (GOL) konnte das Problem bereits behoben werden. An den übrigen Standorten wird dies voraussichtlich bis Juli 2025 erfolgen. Die entstandenen Datenlücken werden wir versuchen schrittweise zu füllen.
- 
+The cause of the remote data transmission (RDT) failure for the probes KH, PAU, BOO, DED, and GOL has been identified. Fixing it requires on-site intervention in each case. At the Potsdam/Golm (GOL) site, the problem has already been resolved. At the other sites, this is expected to be done by July 2025. We will try to gradually fill the resulting data gaps.
+
 ### 2025-06-13
 
-Die Sonden an den Standorten Kienhorst (KH), Paulinenaue (PAU), Booßen (BOO), Dedelow/Quillow (DED) und Potsdam/Golm (GOL) übertragen seit dem 12. Juni 2025 keine Daten. Wir arbeiten an einer Behebung des Problems. 
+Since June 12, 2025, the probes at the sites Kienhorst (KH), Paulinenaue (PAU), Booßen (BOO), Dedelow/Quillow (DED), and Potsdam/Golm (GOL) have not been transmitting any data. We are working on resolving the problem.
 
 ### 2025-05-02
 
-Aufgrund einer defekten Komponente hat die Station Kienhorst vom 17.3 - 1.5.2025 nicht aufgezeichnet. Das Problem ist nun behoben. 
+Due to a defective component, the station Kienhorst did not record data from March 17 to May 1, 2025. The problem is now fixed.
 
 ### 2025-01-30
 
-Die Datenlücke für den Standort Oehna (im Wstl. Dezember 2024) ist nun geschlossen.
+The data gap for the Oehna site (mainly December 2024) is now closed.
 
 ### 2025-01-27
 
-Die Monitorseite wird nun wieder routinemäßig aktualisiert. Wir arbeiten weiter an der Schließung der entstandenen Datenlücke für den Standort Oehna. Zu diesem Zweck müssen zunächst die Daten von der SD-Karte der Sonde lokal ausgelesen werden.
+The monitoring page is now being updated routinely again. We continue to work on closing the data gap that occurred at the Oehna site. For this purpose, the data from the probe's SD card must first be read out locally.
 
 ### 2025-01-07
 
-Die Datenfernübertragung an den Standorten Marquardt (Ost), Marquardt (ATB) und Oehna läuft wieder. Wir arbeiten daran, die entstandenen Datenlücken im Monitor schrittweise zu schließen.
+Remote data transmission at the sites Marquardt (East), Marquardt (ATB), and Oehna is running again. We are working on gradually closing the data gaps in the monitor.
 
 ### 2024-12-23
 
-Wir setzen die Aktualisierung des Monitors für einige Zeit aus, um die beschriebenen Probleme in der Datenfernübertragung dem Messsignal an den  Standorten Booßen und Golm zu beheben.
+We are pausing updates to the monitor for some time in order to fix the described problems with remote data transmission of the measurement signal at the sites Booßen and Golm.
 
 ### 2024-12-12
 
-Abschlussworkshop des Projekts "Einfluss des Klimawandels auf die Grundwasserneubildung in Brandenburg: Anpassungsbedarfe und Hebelpunkte" in Potsdam, gemeinsam mit Vertreter:innen des MLUK, LfU und LBGR. Wir danken dem Land Brandenburg für die Förderung des Projekts, welches die Entwicklung des Monitoringnetzwerks maßgeblich mitunterstützt hat.
+Final workshop of the project "Impact of Climate Change on Groundwater Recharge in Brandenburg: Adaptation Needs and Leverage Points" in Potsdam, together with representatives from MLUK, LfU, and LBGR. We thank the state of Brandenburg for funding the project, which has significantly supported the development of the monitoring network.
 
 ### 2024-12-12
 
-Preprint über das CRNS-Netzwerk in Brandenburg in EGUsphere veröffentlicht ([Link](https://egusphere.copernicus.org/preprints/2024/egusphere-2024-3848/)).
+Preprint about the CRNS network in Brandenburg published in EGUsphere ([Link](https://egusphere.copernicus.org/preprints/2024/egusphere-2024-3848/)).
 
 ### 2024-11-15
 
-Das Messsignal der Sensoren an den Standorten Booßen und Golm ist zunehmend von Rauschen betroffen. Wir arbeiten gemeinsam mit dem Hersteller an einer Lösung des Problems. 
+The measurement signal of the sensors at the sites Booßen and Golm is increasingly affected by noise. We are working together with the manufacturer on a solution to the problem.
 
 ### 2024-11-27
 
-Die FTP-basierte Datenfernübertragung ist aufgrund einer DoS-Attacke auf die Universität Potsdam für folgende Standorte ausgesetzt:
+FTP-based remote data transmission is suspended due to a DoS attack on the University of Potsdam for the following sites:
 
-   - Marquardt (Ost)
-   - Marquardt (ATB)
-   - Oehna
+* Marquardt (East)
+* Marquardt (ATB)
+* Oehna
 
 ### 2024-11-18
 
-Die Datenfernübertragung am Standort Kienhorst ist zunehmend von unregelmäßigen Störungen der Datenfernübertragung betroffen. Wir arbeiten an der Lösung des Problems, welches durch die schwache Netzabdeckung vor Ort begründet ist.
+Remote data transmission at the Kienhorst site is increasingly affected by irregular disturbances. We are working on solving the problem, which is caused by weak network coverage on site.
 
 ### 2024-06-27
 
-Standort Golm ist instrumentiert und online.
+Golm site is instrumented and online.
 
 ### 2024-05-21
 
-Monitoring-Netzwerk offiziell beim Besuch des Brandenburgischen Umweltministers Axel Vogel in Marqaurdt gestartet ([Link](https://www.uni-potsdam.de/de/nachrichten/detail/2024-05-21-dem-wasser-auf-der-spur-bodenfeuchte-netzwerk-brandenburg-startet)).
+Monitoring network officially started during a visit by Brandenburg’s Environment Minister Axel Vogel in Marquardt ([Link](https://www.uni-potsdam.de/de/nachrichten/detail/2024-05-21-dem-wasser-auf-der-spur-bodenfeuchte-netzwerk-brandenburg-startet)).
 
 ### 2024-05-01
 
-Mittlerweile sind sechs CRNS-gestützte Bodenfeuchtesensoren im Rahmen unseres Monitoringnetzwerks in Brandenburg online (Standorte Booßen, Dedelow, Paulinenaue, Kienhorst, Marquardt Ost, Oehna). Ferner können wir die Daten des Standorts Lindenberg (UFZ/DWD) nutzen und darstellen.
-
+Currently, six CRNS-supported soil moisture sensors are online as part of our monitoring network in Brandenburg (sites Booßen, Dedelow, Paulinenaue, Kienhorst, Marquardt East, Oehna). Furthermore, we can use and display data from the Lindenberg site (UFZ/DWD).

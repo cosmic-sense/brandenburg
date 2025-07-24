@@ -6,7 +6,7 @@ lang: en
 <!DOCTYPE html>
 <html>
 <div class="blurb">
-	<h1>Das CRNS-Netzwerk in Brandenburg</h1>
+	<h1>The CRNS network in Brandenburg</h1>
 </div><!-- /.blurb -->
 
 <head>
@@ -63,9 +63,9 @@ lang: en
 </head>
 <body>
 
-Die Menge kosmogener Neutronen in der oberflächennahen Atmosphäre steht in direkter Beziehung zur Bodenfeuchte.
-Die Universität Potsdam, das Helmholtz-Zentrum für Umweltforschung und das Land Brandenburg messen an
-aktuell neun Standorten in Brandenburg Bodenfeuchte mittels Zählung kosmogener Neutronen.<br>
+The amount of cosmic-ray neutrons in the near-surface atmosphere is directly related to soil moisture. 
+The University of Potsdam, the Helmholtz Centre for Environmental Research, and the state of Brandenburg currently measure soil moisture at nine locations in Brandenburg by counting cosmic-ray neutrons.
+<br>
 
 <div id='map'></div>
 
@@ -140,16 +140,16 @@ var Esri_WorldImagery =  L.tileLayer('https://server.arcgisonline.com/ArcGIS/res
 	info.update = function (props) {
 		this._div.innerHTML = '<h4>CRNS Netzwerk BB</h4>' +  (props ?
 		'<b> ID:</b> ' + props.id + '<br>' +
-		'<b> Standort:</b> '        +props.name  + '<br>' +
-		'<b> Landnutzung:</b> '        +props.landuse  + '<br>' +
-		'<b> GW-Flurabstand:</b> '        +props.WERT + 'm' + '<br>' +
-		'<b> Bodenart:</b> '        +props.ka5_bez  + '<br>' +
+		'<b> Location:</b> '        +props.name  + '<br>' +
+		'<b> Land use:</b> '        +props.landuse  + '<br>' +
+		'<b> GW depth:</b> '        +props.WERT + 'm' + '<br>' +
+		'<b> Soil texture:</b> '        +props.ka5_bez  + '<br>' +
 /*		'<b> kF (bis 1m):</b> '        +props.m1_wert  + '<br>' +
 		'<b> kF (bis 2m):</b> '        +props.m2_wert  + '<br>' +
 		'<b> FK (bis 1m):</b> '        +props.fk_1m_wert  + '<br>' +
 		'<b> nFK (bis 1m):</b> '        +props.nfk_1m_wert  + '<br>' + 
 		'<b> Humusgehalt:</b> '        +props.wertebereich  + '<br>' + */
-		'(für weitere Attribute klicken)'  + '<br>' 
+		'(click for additional attributes)'  + '<br>' 
 
 			: 'Hover over a sensor');
 	};
@@ -254,16 +254,16 @@ var Esri_WorldImagery =  L.tileLayer('https://server.arcgisonline.com/ArcGIS/res
         //layer.bindPopup('<p>Hello world!<br />This is a nice popup.</p>');
         layer.bindPopup("<iframe srcdoc='<p>"+
 					'<b> ID:</b> '        +feature.properties.id  + '<br>' +
-					'<b> Standort:</b> '        +feature.properties.name  + '<br>' +
-			 		'<b> Landnutzung:</b> '        +feature.properties.landuse  + '<br>' +
-			 		'<b> GW-Flurabstand:</b> '        +feature.properties.WERT  + 'm' + '<br>' +
-			 		'<b> Bodenart:</b> '        +feature.properties.ka5_bez  + '<br>' +
-			 		'<b> kF (bis 1m):</b> '        +feature.properties.m1_wert  + '<br>' +
-			 		'<b> kF (bis 2m):</b> '        +feature.properties.m2_wert  + '<br>' +
-			 		'<b> FK (bis 1m):</b> '        +feature.properties.fk_1m_wert  + '<br>' +
-			 		'<b> nFK (bis 1m):</b> '        +feature.properties.nfk_1m_wert  + '<br>' + 
-			 		'<b> Humusgehalt:</b> '        +feature.properties.wertebereich  + '<br>' + 
-			 		'(Bodenattribute gem. BUEK300)'  + '<br>' +
+					'<b> Location:</b> '        +feature.properties.name  + '<br>' +
+			 		'<b> Land use:</b> '        +feature.properties.landuse  + '<br>' +
+			 		'<b> GW depth:</b> '        +feature.properties.WERT  + 'm' + '<br>' +
+			 		'<b> Soil texture:</b> '        +feature.properties.ka5_bez  + '<br>' +
+			 		'<b> kF (down to 1m):</b> '        +feature.properties.m1_wert  + '<br>' +
+			 		'<b> kF (down to 2m):</b> '        +feature.properties.m2_wert  + '<br>' +
+			 		'<b> FK (down to 1m):</b> '        +feature.properties.fk_1m_wert  + '<br>' +
+			 		'<b> nFK (down to 1m):</b> '        +feature.properties.nfk_1m_wert  + '<br>' + 
+			 		'<b> Organic matter content:</b> '        +feature.properties.wertebereich  + '<br>' + 
+			 		'(Soil attributes acc. to BUEK300)'  + '<br>' +
 					 "</p>' height='200px' width='300px'</iframe>")
 
         layer.on({
@@ -326,11 +326,11 @@ var Esri_WorldImagery =  L.tileLayer('https://server.arcgisonline.com/ArcGIS/res
 
 function getColor(d, status) {
         if (status  === "removed") return "grey"
-		return   d === 'Acker' ? "#c0392b" :
-               d === 'Grünland' ? "#9b59b6" :
-               d === 'Wald (Kiefer)' ? "#2980b9" :
+		return   d === 'Cropland' ? "#c0392b" :
+               d === 'Grasland' ? "#9b59b6" :
+               d === 'Forest (pine)' ? "#2980b9" :
                d === 'Urban' ? "#1abc9c" :
-               d === 'Gemischt'  ? "#2F4F4F" :
+               d === 'Mixed'  ? "#2F4F4F" :
                             "grey";
     }
 
@@ -420,7 +420,7 @@ var legend = L.control({position: 'bottomright'});
     var div = L.DomUtil.create('div', 'info legend');
     labels = ['<strong>CRNS Locations</strong>'],
     categories = ['FZJ','GFZ','HZM','KIT','UP','UFZ'];
-	 categories = ['Acker','Grünland','Wald (Kiefer)','Urban','Gemischt'];
+	 categories = ['Cropland','Grasland','Forest (pine)','Urban','Mixed'];
 
     for (var i = 0; i < categories.length; i++) {
 
