@@ -1,6 +1,8 @@
 ---
 layout: default
 title: COSMOS-BB
+lang: de
+permalink: /de/
 ---
 
 # Aktuelles
