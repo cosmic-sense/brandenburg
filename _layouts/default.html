@@ -29,11 +29,21 @@
             {% include nav-de.html %}
           {% endif %}
 
-<nav class="lang-switch">
-  <a href="{{ page.url | replace:'/en','/de' }}">Deutsch</a>
-  <a href="{{ page.url | replace:'/de','/en' }}">English</a>
-</nav>
-
+          <nav class="lang-switch">
+            {% assign current = page.url %}
+            {% if page.lang == "de" %}
+              {% assign target = current | replace_first: '/de/', '/en/' %}
+              <a href="{{ target | relative_url }}">English</a>
+            {% elsif page.lang == "en" %}
+              {% assign target = current | replace_first: '/en/', '/de/' %}
+              <a href="{{ target | relative_url }}">Deutsch</a>
+            {% else %}
+              <!-- fallback if the page isn’t under /en/ or /de/ -->
+              <a href="{{ '/en/' | relative_url }}">English</a> |
+              <a href="{{ '/de/' | relative_url }}">Deutsch</a>
+            {% endif %}
+          </nav>
+          
         </header>
         <section id="downloads" class="clearfix">
           {% if site.show_downloads %}
