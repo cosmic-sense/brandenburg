@@ -1,6 +1,7 @@
 ---
 layout: default
 title: COSMOS Brandenburg
+lang: de
 ---
 
 # Lokale Wasserbilanz

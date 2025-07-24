@@ -1,6 +1,7 @@
 ---
 layout: default
 title: COSMOS-BB
+lang: en
 ---
 
 # Bodenfeuchte-Monitoring
