@@ -1,7 +1,7 @@
 ---
 layout: default
 title: COSMOS-BB
-lang: de 
+lang: en 
 ---
 
 {% if page.lang == "de" %}
