@@ -1,2 +1,5 @@
 theme: jekyll-theme-tactile
 baseurl: /brandenburg
+description:
+  en: "Soil moisture and water balance in Brandenburg"
+  de: "Bodenfeuchte und Wasserhalt in Brandenburg"
