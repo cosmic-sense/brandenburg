@@ -31,18 +31,20 @@
 
           <nav class="lang-switch">
             {% assign current = page.url %}
+            {% assign de_url = current | replace_first: '/en/', '/de/' %}
+            {% assign en_url = current | replace_first: '/de/', '/en/' %}
+
             {% if page.lang == "de" %}
-              {% assign target = current | replace_first: '/de/', '/en/' %}
-              <a href="{{ target | relative_url }}">English</a>
+              <strong>de</strong> - <a href="{{ en_url | relative_url }}">en</a>
             {% elsif page.lang == "en" %}
-              {% assign target = current | replace_first: '/en/', '/de/' %}
-              <a href="{{ target | relative_url }}">Deutsch</a>
+              <a href="{{ de_url | relative_url }}">de</a> - <strong>en</strong>
             {% else %}
-              <!-- fallback if the page isn’t under /en/ or /de/ -->
-              <a href="{{ '/en/' | relative_url }}">English</a> |
-              <a href="{{ '/de/' | relative_url }}">Deutsch</a>
+              <!-- fallback if language is not defined -->
+              <a href="{{ '/de/' | relative_url }}">de</a> - 
+              <a href="{{ '/en/' | relative_url }}">en</a>
             {% endif %}
           </nav>
+
           
         </header>
         <section id="downloads" class="clearfix">
