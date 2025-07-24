@@ -12,6 +12,6 @@ Die untenstehende Abbildung zeigt die zeitliche Dynamik der Bodenfeuchte (schwar
 
 Siehe ["Aktuelles"](https://cosmic-sense.github.io/brandenburg/aktuelles/) bzgl. aktueller Mitteilungen zum Netzwerkbetrieb.
 
-![overview](https://raw.githubusercontent.com/cosmic-sense/brandenburg/main/monitoring/bb-cluster-swc-series.png "Monitor")
+![overview](https://raw.githubusercontent.com/cosmic-sense/brandenburg/main/de/monitoring/bb-cluster-swc-series.png "Monitor")
 
 

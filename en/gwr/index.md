@@ -19,6 +19,6 @@ erfolgt noch mit default-Parametern. Die Seite dient bislang lediglich der Plaus
 
 Siehe ["Aktuelles"](https://cosmic-sense.github.io/brandenburg/aktuelles/) bzgl. aktueller Mitteilungen zum Netzwerkbetrieb.
 
-![overview](https://raw.githubusercontent.com/cosmic-sense/brandenburg/main/gwr/bb-cluster-balance.png "Wasserbilanz")
+![overview](https://raw.githubusercontent.com/cosmic-sense/brandenburg/main/de/gwr/bb-cluster-balance.png "Wasserbilanz")
 
 
