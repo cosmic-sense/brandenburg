@@ -276,7 +276,7 @@ var Esri_WorldImagery =  L.tileLayer('https://server.arcgisonline.com/ArcGIS/res
 	 map.getPane('myPane1').style.zIndex = 200;
 	 
 	 
-	 $.getJSON("https://raw.githubusercontent.com/cosmic-sense/brandenburg/main/de/standorte/bb.geojson",function(data){
+	 $.getJSON("https://raw.githubusercontent.com/cosmic-sense/brandenburg/main/en/standorte/bb.geojson",function(data){
 	 // L.geoJson function is used to parse geojson file and load on to map
 	 L.geoJson(data, {pane: 'myPane1'}).addTo(map);
 	 //L.geoJson(data).addTo(layerBB);
@@ -287,7 +287,7 @@ var Esri_WorldImagery =  L.tileLayer('https://server.arcgisonline.com/ArcGIS/res
 
     var gaugesjson;
 
-    $.getJSON("https://raw.githubusercontent.com/cosmic-sense/brandenburg/main/de/standorte/bbcluster.geojson", function(data) {
+    $.getJSON("https://raw.githubusercontent.com/cosmic-sense/brandenburg/main/en/standorte/bbcluster.geojson", function(data) {
 	    gaugesjson = L.geoJSON(data, {
 		pointToLayer: function (feature, latlng) {
 			  label = String(feature.properties.id)
@@ -327,7 +327,7 @@ var Esri_WorldImagery =  L.tileLayer('https://server.arcgisonline.com/ArcGIS/res
 function getColor(d, status) {
         if (status  === "removed") return "grey"
 		return   d === 'Cropland' ? "#c0392b" :
-               d === 'Grasland' ? "#9b59b6" :
+               d === 'Grassland' ? "#9b59b6" :
                d === 'Forest (pine)' ? "#2980b9" :
                d === 'Urban' ? "#1abc9c" :
                d === 'Mixed'  ? "#2F4F4F" :
@@ -420,7 +420,7 @@ var legend = L.control({position: 'bottomright'});
     var div = L.DomUtil.create('div', 'info legend');
     labels = ['<strong>CRNS Locations</strong>'],
     categories = ['FZJ','GFZ','HZM','KIT','UP','UFZ'];
-	 categories = ['Cropland','Grasland','Forest (pine)','Urban','Mixed'];
+	 categories = ['Cropland','Grassland','Forest (pine)','Urban','Mixed'];
 
     for (var i = 0; i < categories.length; i++) {
 
