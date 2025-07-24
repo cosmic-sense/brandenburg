@@ -19,7 +19,7 @@ Die Sonden an den Standorten Kienhorst (KH), Paulinenaue (PAU), Booßen (BOO), D
 
 ### 2025-05-02
 
-Aufgrund einer defekten Komponente hat die Station Kienhorst vom 17.3-1.5.2025 nicht aufgezeichnet. Das Problem ist nun behoben. 
+Aufgrund einer defekten Komponente hat die Station Kienhorst vom 17.3 - 1.5.2025 nicht aufgezeichnet. Das Problem ist nun behoben. 
 
 ### 2025-01-30
 
