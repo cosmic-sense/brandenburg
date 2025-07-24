@@ -22,7 +22,18 @@
 -->
 <h1><img src="https://raw.githubusercontent.com/cosmic-sense/brandenburg/main/_layouts/thelogo.png" alt="CosmicSense Logo"  width="500" height="130"> </h1>
           <h2>{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-	  {% include nav.html %}
+
+          {% if page.lang == "en" %}
+            {% include nav-en.html %}
+          {% elsif page.lang == "de" %}
+            {% include nav-de.html %}
+          {% endif %}
+
+<nav class="lang-switch">
+  <a href="{{ page.url | replace:'/en','/de' }}">Deutsch</a>
+  <a href="{{ page.url | replace:'/de','/en' }}">English</a>
+</nav>
+
         </header>
         <section id="downloads" class="clearfix">
           {% if site.show_downloads %}
