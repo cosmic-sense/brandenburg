@@ -6,6 +6,10 @@ lang: en
 
 # News
 
+### 2025-08-20
+
+The data gaps caused by the failure of the FTP transmission between June 13 and July 16, 2025 have now also been closed as far as possible for the sites Paulinenaue (PAU) and Dedelow (DED), based on the data secured from the SD memory card. However, at the Paulinenaue (PAU) site, a data gap remains from June 18 to July 16 due to an overloaded SD memory card.
+
 ### 2025-07-17
 
 Data transmission at the sites Kienhorst (KH), Paulinenaue (PAU), Booßen (BOO), Dedelow/Quillow (DED), and Potsdam/Golm (GOL) has been restored since July 16, 2025. For Kienhorst (KH), Booßen (BOO), and Potsdam/Golm (GOL), the data gaps caused by the remote data transmission failure have already been closed. For Paulinenaue (PAU) and Dedelow/Quillow (DED), the closing of the data gaps will take place in the coming weeks. A corresponding status update will then be provided.

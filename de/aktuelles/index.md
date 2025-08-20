@@ -6,6 +6,10 @@ lang: de
 
 # Aktuelles
 
+### 2025-08-20
+
+Die durch den Ausfall der FTP-Übertragung zwischen dem 13. Juni und dem 16. Juli 2025 entstandenen Datenlücken wurden nun auch für die Standorte Paulinenaue (PAU) und Dedelow (DED) so weit wie möglich auf Grundlage der vom SD-Speicher sichergestellten Daten geschlossen. Für den Standort Paulinenaue (PAU) verbleibt allerdings aufgrund eines überfüllten SD-Speichers eine Datenlücke vom 18. Juni bis zum 16. Juli.
+
 ### 2025-07-17
 
 Die Datenübertragung an den Standorten Kienhorst (KH), Paulinenaue (PAU), Booßen (BOO), Dedelow/Quillow (DED) und Potsdam/Golm (GOL) ist seit dem 16. Juli 2025 wieder hergestellt. Für Kienhorst (KH), Booßen (BOO) und Potsdam/Golm (GOL) sind die durch den DFÜ-Ausfall entstandenen Datenlücken bereits geschlossen. Für Paulinenaue (PAU) und Dedelow/Quillow (DED) erfolgt die Schließung der Datenlücken in den kommenden Wochen. Eine entsprechende Statusmeldung wird dann erfolgen.
