@@ -328,7 +328,7 @@ function getColor(d, status) {
         if (status  === "removed") return "grey"
 		return   d === 'Acker' ? "#c0392b" :
                d === 'Grünland' ? "#9b59b6" :
-               d === 'Wald (Kiefer)' ? "#2980b9" :
+               d === 'Wald' ? "#2980b9" :
                d === 'Urban' ? "#1abc9c" :
                d === 'Gemischt'  ? "#2F4F4F" :
                             "grey";
@@ -420,7 +420,7 @@ var legend = L.control({position: 'bottomright'});
     var div = L.DomUtil.create('div', 'info legend');
     labels = ['<strong>CRNS Locations</strong>'],
     categories = ['FZJ','GFZ','HZM','KIT','UP','UFZ'];
-	 categories = ['Acker','Grünland','Wald (Kiefer)','Urban','Gemischt'];
+	 categories = ['Acker','Grünland','Wald','Urban','Gemischt'];
 
     for (var i = 0; i < categories.length; i++) {
 
