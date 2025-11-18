@@ -6,6 +6,19 @@ lang: en
 
 # News
 
+
+### 2025-11-17
+
+The monitoring network has been expanded today by an additional site. We are now measuring at the Fünfeichen site in the Schlaubetal (an oak stand in the Level II forestry environmental monitoring program). The observation data are already available in the repository. Visualization in the monitor will follow after a verification phase of several months. Another observation plot of the forestry environmental monitoring program is expected to be added in December 2025 (a beech stand at the Beerenbusch site at Lake Großer Stechlin). This will complete the expansion of the monitoring network in 2025.
+
+### 2025-11-10
+
+The monitoring network was expanded today by an additional site. We are now measuring at the Dubrau site (near Forst) on an agricultural field. The observation data are already available in the repository. Visualization in the monitor will follow after a verification phase of several months.
+
+### 2025-10-09
+
+The monitoring network was expanded today by an additional site. We are now measuring at the Trebbin site on an area currently used as permanent fallow. The observation data are already available in the repository. Visualization in the monitor will follow after a verification phase of several months.
+
 ### 2025-08-20
 
 The data gaps caused by the failure of the FTP transmission between June 13 and July 16, 2025 have now also been closed as far as possible for the sites Paulinenaue (PAU) and Dedelow (DED), based on the data secured from the SD memory card. However, at the Paulinenaue (PAU) site, a data gap remains from June 18 to July 16 due to an overloaded SD memory card.

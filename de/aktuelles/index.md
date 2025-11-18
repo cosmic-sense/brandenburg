@@ -6,6 +6,19 @@ lang: de
 
 # Aktuelles
 
+
+### 2025-11-17
+
+Das Monitoringnetzwerk wurde heute um einen weiteren Standort erweitert. Wir messen nun am Standort Fünfeichen im Schlaubetal in einem Eichenbestand. Es handelt sich dabei um eine Level II Dauerbeobachtungsfläche des forstlichen Umweltmonitorings. Die Beobachtungsdaten sind bereits im Repository verfügbar. Die Darstellung im Monitor erfolgt nach einer mehrmonatigen Verifikationsphase. Eine weitere Beobachtungsfläche des forstlichen Umweltmonitorings kommt voraussichtlich im Dezember 2025 hinzu (Buchenbestand am Standort Beerenbusch am Großen Stechlinsee). Damit wird die Erweiterung des Monitoringnetzwerks im Jahr 2025 zum Abschluss kommen.
+
+### 2025-11-10
+
+Das Monitoringnetzwerk wurde heute um einen weiteren Standort erweitert. Wir messen nun am Standort Dubrau (bei Forst) auf einer Ackerfläche. Die Beobachtungsdaten sind bereits im Repository verfügbar. Die Darstellung im Monitor erfolgt nach einer mehrmonatigen Verifikationsphase.
+
+### 2025-10-09
+
+Das Monitoringnetzwerk wurde heute um einen weiteren Standort erweitert. Wir messen nun am Standort Trebbin auf einer Fläche, die aktuell als Dauerbrache genutzt wird. Die Beobachtungsdaten sind bereits im Repository verfügbar. Die Darstellung im Monitor erfolgt nach einer mehrmonatigen Verifikationsphase.
+
 ### 2025-08-20
 
 Die durch den Ausfall der FTP-Übertragung zwischen dem 13. Juni und dem 16. Juli 2025 entstandenen Datenlücken wurden nun auch für die Standorte Paulinenaue (PAU) und Dedelow (DED) so weit wie möglich auf Grundlage der vom SD-Speicher sichergestellten Daten geschlossen. Für den Standort Paulinenaue (PAU) verbleibt allerdings aufgrund eines überfüllten SD-Speichers eine Datenlücke vom 18. Juni bis zum 16. Juli.
