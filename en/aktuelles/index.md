@@ -6,6 +6,9 @@ lang: en
 
 # News
 
+### 2025-12-05
+
+The monitoring network was expanded today to include the site Beerenbusch (BEE) in a beech stand at lake Großer Stechlin. It is a Level II long-term observation plot of the forestry environmental monitoring program, too. The observational data are already available in the repository. With this step, the expansion of the monitoring network is now complete.
 
 ### 2025-11-17
 

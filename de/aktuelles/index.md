@@ -6,6 +6,9 @@ lang: de
 
 # Aktuelles
 
+### 2025-12-05
+
+Das Monitoringnetzwerk wurde heute um den Standort Beerenbusch (BEE, Buchenbestand am Großen Stechlinsee) erweitert. Es handelt sich auch hier um eine Level II Dauerbeobachtungsfläche des forstlichen Umweltmonitorings. Die Beobachtungsdaten sind bereits im Repository verfügbar. Damit ist die Erweiterung des Monitoringnetzwerks zuächst abgeschlossen.
 
 ### 2025-11-17
 
